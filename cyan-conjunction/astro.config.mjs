@@ -6,6 +6,10 @@ import vue from "@astrojs/vue";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://example.com',
+  site: 'https://conrizzo.github.io',
+  base: '/AstroWebsite',
   integrations: [mdx(), sitemap(), vue()]
 });
+
+import { defineConfig } from 'astro/config'
+
