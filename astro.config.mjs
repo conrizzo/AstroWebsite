@@ -11,5 +11,5 @@ export default defineConfig({
   integrations: [mdx(), sitemap(), vue()]
 });
 
-import { defineConfig } from 'astro/config'
+
 
