@@ -8,6 +8,7 @@ import vue from "@astrojs/vue";
 export default defineConfig({
   site: 'https://conrizzo.github.io',      
   base: '/ConradsBlog',
+  // 2
   integrations: [mdx(), sitemap(), vue()],    
 });
 
