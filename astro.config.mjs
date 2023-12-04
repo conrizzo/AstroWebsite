@@ -1,11 +1,13 @@
 import { defineConfig } from 'astro/config';
-import mdx from '@astrojs/mdx';
 
+import vue from '@astrojs/vue';
+
+import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://conrizzo.github.io',
-	base: '/ConradsBlog',
-	integrations: [mdx(), sitemap()],
+	// base: '/ConradsBlog',
+	integrations: [mdx(), sitemap(), vue()],
 });
