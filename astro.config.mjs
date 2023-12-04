@@ -11,3 +11,7 @@ export default defineConfig({
 	// base: '/ConradsBlog',
 	integrations: [mdx(), sitemap(), vue()],
 });
+
+
+// Temporary fix for paths issue for github pages deployment
+// Added ConradsBlog Header.astro and index.astro
