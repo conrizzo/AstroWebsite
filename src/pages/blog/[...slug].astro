@@ -2,10 +2,11 @@
 import { type CollectionEntry, getCollection } from 'astro:content';
 import BlogPost from '../../layouts/BlogPost.astro';
 
+// Temporary fix to add ConradsBlog to
 export async function getStaticPaths() {
 	const posts = await getCollection('blog');
 	return posts.map((post) => ({
-		params: { slug: post.slug },
+		params: { slug: `ConradsBlog/blog/${post.slug}`},
 		props: post,
 	}));
 }
