@@ -6,7 +6,7 @@ import sitemap from '@astrojs/sitemap';
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://blog.conradswebsite.com',
-	base: '/ConradsBlog',
+	
 	integrations: [mdx(), sitemap(), vue()],
 });
 
@@ -15,3 +15,5 @@ export default defineConfig({
 // Added ConradsBlog Header.astro and index.astro
 
 // testing again
+
+// base: '/ConradsBlog',
