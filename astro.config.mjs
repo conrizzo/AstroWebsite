@@ -10,7 +10,7 @@ export default defineConfig({
 	integrations: [mdx(), sitemap(), vue()],
 });
 
-
+// site: 'https://blog.conradswebsite.com',
 // Temporary fix for paths issue for github pages deployment
 // Added ConradsBlog Header.astro and index.astro
 
