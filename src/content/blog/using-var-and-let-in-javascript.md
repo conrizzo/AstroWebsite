@@ -2,7 +2,7 @@
 title: 'Using Var and Let in JavaScript'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Jul 22 2022'
-heroImage: '/ConradsBlog/blog-placeholder-4.jpg'
+heroImage: '/blog-placeholder-4.jpg'
 ---
 
 I've read this topic multiple times and feel like people explaining it make it too verbose.

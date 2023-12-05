@@ -2,7 +2,7 @@
 title: 'First post'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Dec 05 2023'
-heroImage: '/ConradsBlog/blog-placeholder-3.jpg'
+heroImage: '/blog-placeholder-3.jpg'
 ---
 
 This is the first post. I had to learn how Astro works and how it automatically routes and links everything so this would mostly work
@@ -16,8 +16,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://conrizzo.github.io',
-	base: '/ConradsBlog',
+	site: 'https://blog.conradswebsite.com',	
 	integrations: [mdx(), sitemap(), vue()],
 });
 ```
