@@ -5,7 +5,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://conrizzo.github.io',
+	site: 'https://blog.conradswebsite.com',
 	base: '/ConradsBlog',
 	integrations: [mdx(), sitemap(), vue()],
 });
