@@ -6,19 +6,20 @@ heroImage: '/blog-placeholder-4.jpg'
 ---
 
 I've read this topic multiple times and feel like people explaining it make it too verbose.
-In the code below it can be explained instantly:
+In the code below it can be explained instantly. Here is a link to a jsfiddle 
+<a href='https://jsfiddle.net/j19fdqxp/'>example</a>.
 ```javascript
 function cat(){
-    var cat = 'LET'
+    var cat = 'VAR'
     if (true){
-        let cat = 'VAR'
-        // here the value of cat is "VAR"
+        let cat = 'LET'
+        // here the value of cat is "LET"
     }
-    // here the value of cat is "LET"
+    // here the value of cat is "VAR"
 }
 ```
-In the inner if block which executes automatically with 'if (true)' the value of cat will be 'VAR' but outside of this block it will always be 'LET'
-This is about all there is to it. "let" is limited in scope to ONLY the block of code it is in. In this case this IF statement.
+In the inner if block which executes automatically with 'if (true)' the value of cat will be 'LET' but outside of this block it will always be 'VAR'
+This is about all there is to it. "let" is limited in scope to ONLY the block of code it is in. In this case this means only inside this IF statement.
 
 In the following example the position of var and let are switched. This will create an error since "let cat = 'LET'" declares the value to the whole
 block for the function cat() and it cannot be redeclared. An error message of: "Cannot redeclare block-scoped variable 'cat'." will appear with the following code:
@@ -27,10 +28,8 @@ block for the function cat() and it cannot be redeclared. An error message of: "
 function cat(){
     let cat = 'LET'
     if (true){
-        var cat = 'VAR'
-        
-    }
-    
+        var cat = 'VAR'        
+    }    
 }
 ```
 
