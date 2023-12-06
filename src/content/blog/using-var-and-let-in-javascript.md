@@ -11,34 +11,60 @@ In the code below it can be explained instantly. Here is a link to a jsfiddle
 
 ```javascript
 function cat(){
-    var cat = 'VAR'
-    if (true){
-        let cat = 'LET'
+    var cat = 'VAR';
+    if(true){
+        let cat = 'LET';
         // here the value of cat is "LET"
     }
     // here the value of cat is "VAR"
 }
 ```
-In the inner if block which executes automatically with 'if (true)' the value of cat will be 'LET' but outside of this block it will always be 'VAR'
-This is about all there is to it. "let" is limited in scope to ONLY the block of code it is in. In this case this means only inside this IF statement.
+In the inner if block which executes automatically with 'if(true)' the value of cat will be 'LET', but outside of this block it will always be 'VAR'.
+The "let" declaration is limited in scope to ONLY the block of code it is in. In this case this means only inside the 'if' statement.
 
-In the following example the position of var and let are switched. This will create an error since "let cat = 'LET'" declares the value to the whole
-block for the function cat() and it cannot be redeclared. An error message of: "Cannot redeclare block-scoped variable 'cat'." will appear with the following code:
 
 ```javascript
 function cat(){
-    let cat = 'LET'
+    let cat;    
+    if(true){
+        let cat = 'LET';
+        // here the value of cat is "LET"
+    }
+    // here the value of cat is "undefined"
+}
+```
+
+If var and let are switched within the same code this will create an error since "let cat = 'LET'" declares the value to the whole block for the function cat() and it cannot be redeclared. An error message of: "Cannot redeclare block-scoped variable 'cat'." will appear using the following code:
+
+```javascript
+function cat(){
+    let cat = 'LET';
     if (true){
-        var cat = 'VAR'        
+        var cat = 'VAR';     
     }    
 }
 ```
 
-The above example is the same principle as below:
+The function in the code example directly above causes the same error as the example directly below.
+"SyntaxError: Identifier 'cat' has already been declared"
 
 ```javascript
-let cat = 'LET'
-let cat = 'LET'
+let cat = 'LET';
+var cat = 'VAR';
 ```
 
 Here an error will appear saying the same variable cannot be declared twice!
+
+<h4>Summary:</h4>
+<span class="variable-color">Const</span> should always be the first choice when declaring a variable.
+If something must change decide whether to use <span class="variable-color">Let</span> or <span class="variable-color">Var</span>. If possible, using <span class="variable-color">Let</span> instead 
+of Var is the better organizational approach since it does a better job at seperation of concerns.
+
+
+
+<style scoped>
+.variable-color{
+    color: rgb(168, 55, 247);
+}
+    
+</style>
