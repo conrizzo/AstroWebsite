@@ -6,8 +6,8 @@ heroImage: '/var_let.jpg'
 ---
 
 I've read this topic multiple times and feel like people explaining it make it too verbose.
-In the code below it can be explained instantly. Here is a link to a jsfiddle 
-<a href='https://jsfiddle.net/w40yLazr/1/'>example</a>.
+In the code below it can be explained instantly. Here is
+<a href='https://jsfiddle.net/w40yLazr/1/'>a link to a jsfiddle example</a>.
 
 ```javascript
 function cat(){
@@ -20,7 +20,7 @@ function cat(){
 }
 ```
 In the inner if block which executes automatically with 'if(true)' the value of cat will be 'LET', but outside of this block it will always be 'VAR'.
-The "let" declaration is limited in scope to ONLY the block of code it is in. In this case this means only inside the 'if' statement.
+The "let" declaration is limited in scope to <b>only</b> the block of code it is in. In this case this means <b>only</b> inside the 'if' statement.
 
 
 ```javascript
@@ -34,7 +34,7 @@ function cat(){
 }
 ```
 
-If var and let are switched within the same code this will create an error since "let cat = 'LET'" declares the value to the whole block for the function cat() and it cannot be redeclared. An error message of: "Cannot redeclare block-scoped variable 'cat'." will appear using the following code:
+If var and let are switched as shown in example code directly below, this will create an error since "let cat = 'LET'" declares the value to the whole block for the function cat() and it cannot be redeclared. An error message of: "Cannot redeclare block-scoped variable 'cat'." will appear using the following code:
 
 ```javascript
 function cat(){
@@ -58,7 +58,7 @@ Here an error will appear saying the same variable cannot be declared twice!
 <h4>Summary:</h4>
 <span class="variable-color">Const</span> should always be the first choice when declaring a variable.
 If something must change decide whether to use <span class="variable-color">Let</span> or <span class="variable-color">Var</span>. If possible, using <span class="variable-color">Let</span> instead 
-of Var is the better organizational approach since it does a better job at seperation of concerns.
+of Var is the better organizational approach since it does a better job at separation of concerns.
 
 
 
