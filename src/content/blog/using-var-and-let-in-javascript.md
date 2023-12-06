@@ -1,13 +1,14 @@
 ---
 title: 'Using Var and Let in JavaScript'
-description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Jul 22 2022'
-heroImage: '/blog-placeholder-4.jpg'
+description: 'The basic difference between Var and Let in JavaScript'
+pubDate: 'Dec 6 2023'
+heroImage: '/var_let.jpg'
 ---
 
 I've read this topic multiple times and feel like people explaining it make it too verbose.
 In the code below it can be explained instantly. Here is a link to a jsfiddle 
-<a href='https://jsfiddle.net/j19fdqxp/'>example</a>.
+<a href='https://jsfiddle.net/w40yLazr/1/'>example</a>.
+
 ```javascript
 function cat(){
     var cat = 'VAR'
@@ -39,4 +40,5 @@ The above example is the same principle as below:
 let cat = 'LET'
 let cat = 'LET'
 ```
+
 Here an error will appear saying the same variable cannot be declared twice!
