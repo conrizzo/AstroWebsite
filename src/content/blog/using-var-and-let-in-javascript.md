@@ -15,12 +15,12 @@ function cat(){
     if(true){
         let cat = 'LET';
         // here the value of cat is "LET"
-    }
+    }i
     // here the value of cat is "VAR"
 }
 ```
-In the inner if block which executes automatically with 'if(true)' the value of cat will be 'LET', but outside of this block it will always be 'VAR'.
-The "let" declaration is limited in scope to <b>only</b> the block of code it is in. In this case this means <b>only</b> inside the 'if' statement.
+In the inner if block which executes automatically with `if(true)` the value of cat will be `LET`, but outside of this block it will always be `VAR`.
+The `let` declaration is limited in scope to **only** the block of code it is in. In this case this means **only** inside the `if` statement.
 
 
 ```javascript
@@ -34,7 +34,7 @@ function cat(){
 }
 ```
 
-If var and let are switched as shown in example code directly below, this will create an error since "let cat = 'LET'" declares the value to the whole block for the function cat() and it cannot be redeclared. An error message of: "Cannot redeclare block-scoped variable 'cat'." will appear using the following code:
+If var and let are switched as shown in example code directly below, this will create an error since `let cat = 'LET'` declares the value to the whole block for the function `cat()` and it cannot be redeclared. An error message of: "Cannot redeclare block-scoped variable 'cat'." will appear using the following code:
 
 ```javascript
 function cat(){
@@ -56,9 +56,8 @@ var cat = 'VAR';
 Here an error will appear saying the same variable cannot be declared twice!
 
 <h4>Summary:</h4>
-<span class="variable-color">Const</span> should always be the first choice when declaring a variable.
-If something must change decide whether to use <span class="variable-color">Let</span> or <span class="variable-color">Var</span>. If possible, using <span class="variable-color">Let</span> instead 
-of Var is the better organizational approach since it does a better job at separation of concerns.
+The first choice for variables should always be <span class="variable-color">const</span>`.
+If something must change decide whether to use <span class="variable-color">let</span> or <span class="variable-color">var</span>. If possible, it's generally best to use <span class="variable-color">let</span> instead of <span class="variable-color">var</span> since <span class="variable-color">Let</span> does a better job with separation of concerns.
 
 
 
