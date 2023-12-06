@@ -56,7 +56,7 @@ var cat = 'VAR';
 Here an error will appear saying the same variable cannot be declared twice!
 
 <h4>Summary:</h4>
-The first choice for variables should always be <span class="variable-color">const</span>`.
+The first choice for variables should always be <span class="variable-color">const</span>.
 If something must change decide whether to use <span class="variable-color">let</span> or <span class="variable-color">var</span>. If possible, it's generally best to use <span class="variable-color">let</span> instead of <span class="variable-color">var</span> since <span class="variable-color">Let</span> does a better job with separation of concerns.
 
 
