@@ -1,12 +1,12 @@
 ---
-title: 'First post'
-description: 'Lorem ipsum dolor sit amet'
+title: 'Using Astro Blog links with GitHub Pages'
+description: 'Discussing Astro Blog links with GitHub Pages'
 pubDate: 'Dec 05 2023'
 heroImage: '/blog-placeholder-3.jpg'
 ---
 
 This is the first post. I had to learn how Astro works and how it automatically routes and links everything so this would mostly work
-with GitHub pages. In my case a current working solution was to delete 'blog' from the default template code. This involved changing the astro.config.mjs file to have "base: '/ConradsBlog'," for the repository path in GitHub. 
+with GitHub pages. In my case a current working solution was to delete 'blog' from the default template code.
 
 ```javascript
 import { defineConfig } from 'astro/config';

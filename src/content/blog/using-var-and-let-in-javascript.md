@@ -20,7 +20,7 @@ function cat(){
 }
 ```
 In the inner if block which executes automatically with `if(true)` the value of cat will be `LET`, but outside of this block it will always be `VAR`.
-The `let` declaration is limited in scope to **only** the block of code it is in. In this case this means **only** inside the `if` statement.
+The `let` declaration is limited in scope to **only** the block of code it is in, including any nested blocks within it. In the above case this means **only** inside the `if` statement.
 
 
 ```javascript
