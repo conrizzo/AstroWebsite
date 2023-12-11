@@ -5,9 +5,8 @@ pubDate: 'Dec 6 2023'
 heroImage: '/var_let.jpg'
 ---
 
-I've read this topic multiple times and feel like people explaining it make it too verbose.
-In the code below it can be explained instantly. Here is
-<a href='https://jsfiddle.net/w40yLazr/1/'>a link to a jsfiddle example</a>.
+I've read this topic multiple times and feel like people explaining it make it too verbose. Here is
+<a href='https://jsfiddle.net/w40yLazr/1/'>a link to a jsfiddle example for the code below:</a>.
 
 ```javascript
 function cat(){
@@ -56,7 +55,7 @@ var cat = 'VAR';
 Here an error will appear saying the same variable cannot be declared twice!
 
 <h4>Summary:</h4>
-The first choice for variables should always be <span class="variable-color">const</span>.
+In JavaScript the first choice for variables should always be <span class="variable-color">const</span>.
 If something must change decide whether to use <span class="variable-color">let</span> or <span class="variable-color">var</span>. If possible, it's generally best to use <span class="variable-color">let</span> instead of <span class="variable-color">var</span> since <span class="variable-color">let</span> does a better job with separation of concerns.
 
 
