@@ -6,7 +6,7 @@ heroImage: '/var_let.jpg'
 ---
 
 I've read this topic multiple times and feel like people explaining it make it too verbose. Here is
-<a href='https://jsfiddle.net/w40yLazr/1/'>a link to a jsfiddle example for the code below:</a>.
+<a href='https://jsfiddle.net/w40yLazr/1/'>a link to a jsfiddle example for the code below:</a>
 
 ```javascript
 function cat(){
