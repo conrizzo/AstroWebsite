@@ -7,6 +7,9 @@ heroImage: '/blog-placeholder-5.jpg'
 ---
 <script>
 function isPalindrome(stringToEvaluate) {
+
+            stringToEvaluate = stringToEvaluate.toLowerCase()
+
             if (stringToEvaluate === null || stringToEvaluate.length === 0) {
                 return false;
             }
@@ -42,6 +45,9 @@ Self-written code without any tools or looking up anything to check if a string 
 this is an interesting thing to solve. This isn't optimized as it was written in 5-10 minutes or so. I added in the
 input field for this page later, only talking about the function itself.
 
+Update - added in the toLowerCase so an input like "Racecar" is still True and it doesn't match the
+exact case, just the letters.
+
 <input type="text" id="word" />
 <button onclick="checkPalindrome()">Check Palindrome</button>
     <p id="result"></p>
@@ -49,6 +55,8 @@ input field for this page later, only talking about the function itself.
 This code is the javaScript function being used to evaluate this:
 ```javascript
 function isPalindrome(stringToEvaluate) {
+
+    stringToEvaluate = stringToEvaluate.toLowerCase()
         
     if (stringToEvaluate === null || stringToEvaluate.length === 0) {
         return false;
@@ -74,7 +82,7 @@ function isPalindrome(stringToEvaluate) {
 console.log(isPalindrome("12334321")) // false
 console.log(isPalindrome("racecar")) // true
 console.log(isPalindrome("145641")) // false
-console.log(isPalindrome("123454321")) // false    
+console.log(isPalindrome("123454321")) // true    
 ```
 </body>
 </html>
